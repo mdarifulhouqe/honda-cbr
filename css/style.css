@@ -1,0 +1,274 @@
+/* reset css */
+
+
+/* Older Browsers Support */
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+
+
+/* Base CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+    background: #fff;
+    padding: 10px;
+}
+
+
+/* All input focus outline , box-shadow remove */
+
+a:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+button:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus,
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a:hover,
+button {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/* Hero area  */
+
+section.hero_area {
+    background: #264653;
+    height: 600px;
+    padding: 100px 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+.hero_content {
+    padding-right: 80px;
+}
+
+.hero_content p {
+    color: #e0e0e0;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.hero_content .orange_cta {
+    padding: 10px 20px;
+    margin-top: 25px;
+    ;
+}
+
+.orange_cta {
+    background: #E76F51;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #E76F51;
+    transition: .3s ease-in-out;
+}
+
+.orange_cta:hover {
+    color: #E76F51;
+    background-color: transparent;
+}
+
+.hero_content .header {
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.hero_content .sub_header {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hero_image img {
+    padding-top: 30px;
+}
+
+.hero_image {
+    position: relative;
+    z-index: 1;
+}
+
+.hero_image:after {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    z-index: -1;
+    top: 30px;
+    background-repeat: no-repeat;
+    content: '';
+    background-image: url(../img/dots.png);
+}
+
+
+/* featurer section  */
+
+.heading {
+    text-align: center;
+    padding: 80px 0 80px;
+}
+
+.heading h1 {
+    font-size: 48px;
+    color: #00;
+    margin-bottom: 10px;
+}
+
+.heading .colored_text {
+    color: #e76f51;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.heading .colored_text:after {
+    width: 50%;
+    height: 2px;
+    background: #e76f51;
+    content: '';
+    z-index: -1;
+    position: absolute;
+    border-radius: 4px;
+    bottom: -10px;
+    left: 25%;
+}
+
+.feature_bike {
+    padding: 40px;
+}
+
+.feature_bike img {
+    filter: grayscale(1);
+    transition: all .3s ease-in-out;
+}
+
+.feature_bike.colored img {
+    filter: grayscale(0);
+}
+
+.feature_bike {}
+
+.feature_bike img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
