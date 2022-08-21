@@ -221,6 +221,10 @@ section.hero_area {
 
 /* featurer section  */
 
+.feature_area {
+    padding: 100px 0;
+}
+
 .heading {
     text-align: center;
     padding: 80px 0 80px;
@@ -228,7 +232,7 @@ section.hero_area {
 
 .heading h1 {
     font-size: 48px;
-    color: #00;
+    color: #0A0826;
     margin-bottom: 10px;
 }
 
@@ -266,9 +270,130 @@ section.hero_area {
     filter: grayscale(0);
 }
 
-.feature_bike {}
-
 .feature_bike img:hover {
     filter: grayscale(0);
     cursor: pointer;
+}
+
+
+/* news section  */
+
+.news_area {
+    padding-bottom: 100px;
+}
+
+.news_area .card-text {
+    font-size: 18px;
+    color: #6c6c6c;
+    margin-bottom: 2em;
+    line-height: 1.5;
+}
+
+.news_area .card-title {
+    font-size: 28px;
+    margin-bottom: .8em;
+}
+
+.news_area .card-img-top {
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+.news_area .card {
+    border-radius: 8px;
+}
+
+.news_area .card .orange_cta {
+    padding: 10px 20px;
+}
+
+.orange_cta.orange_cta_alt {
+    background-color: transparent;
+    color: #E76F51;
+}
+
+.orange_cta.orange_cta_alt:hover {
+    background-color: #E76F51;
+    color: #fff;
+}
+
+
+/* Client area  */
+
+.heading span {
+    color: #e76f51;
+}
+
+.client_area .heading {
+    margin-bottom: 30px;
+}
+
+.client_area .single_client {
+    padding: 2em 1em;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    margin: 0 10px 30px;
+}
+
+.client_area .single_client img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.ragings i {
+    color: #E77C40;
+}
+
+.ragings {
+    margin: 1.5em 0;
+}
+
+.single_client p {
+    font-size: 18px;
+    padding: 0 45px;
+    line-height: 1.5;
+}
+
+.single_client h5 {
+    color: #23A6F0;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+.single_client h4 {
+    font-size: 14px;
+    color: #252B42;
+}
+
+
+/* Faq area  */
+
+.faq_area .faq_img {
+    margin-right: 200px;
+}
+
+.faq_area .accordion .accordion-item {
+    border: 1px solid #d5e5bf;
+    margin: 1em 0;
+    border-radius: 3px;
+}
+
+.faq_area .accordion-button {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.faq_area .accordion-body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.faq_area .accordion-button:not(.collapsed) {
+    background: none;
+    /* border: none; */
+    box-shadow: none;
+    color: #000;
 }
